@@ -13,15 +13,15 @@ Este projeto em `Assembly x86_64` tem como objetivo exibir na saída padrão as 
 2. **Impressão na Saída Padrão:** Utilizando chamadas de sistema (`syscall`), o programa imprime cada frase na saída padrão (stdout).
 
 ## COMO USAR?
-1. **Ambiente de Desenvolvimento:**
-   - Utilize um ambiente de desenvolvimento que suporte `Assembly x86_64`.
-   - Cole o código fornecido na seção correspondente.
+1. **Compilação e Execução:** 
+    - Compile o código em um ambiente compatível com `x86_64 Assembly`. Você pode usar o NASM (Netwide Assembler) para compilar e o LD (GNU Linker) para ligar o código.
+    ```sh
+    nasm -f elf64 -o main.o main.asm
+    ld -o main main.o
+    ./main
+    ```
    
-2. **Compilação e Execução:**
-   - Compile o código Assembly.
-   - Execute o programa gerado.
-   
-3. **Resultado Esperado:**
+2. **Resultado Esperado:**
    - Ao executar o programa, todas as 20 frases dos filósofos serão exibidas na saída padrão, uma após a outra.
 
 ## NÃO SABE?
